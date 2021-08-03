@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>JUEGO de DAMAS Clásico</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/miEstilo.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/damas.js"></script>
+  </head>
+  <body>
+  	<header>
+  		<span class="jiterry">Juego De Damas Clásico!!!</span>
+  	</header>
+    <div id="Mesa" class="tablero" >   	
+    	<div>
+    		<div class="bloque"></div>
+	    	<div id="red1" class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red2"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red3"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red4"class="bloque"></div>
+	    </div>
+
+	    <div>
+    		<div id="red5" class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red6"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red7"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red8"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    </div>
+
+	    <div>
+    		<div class="bloque"></div>
+	    	<div id="red9"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red10"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red11"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="red12"class="bloque"></div>
+	    </div>
+
+	    <div>
+    		<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    </div>
+
+	    <div>
+    		<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    </div>
+
+	    <div>
+    		<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div class="bloque"></div>
+	    </div>
+
+	    <div>
+    		<div class="bloque"></div>
+	    	<div id="blue12"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue11"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue10"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue9"class="bloque"></div>
+	    </div>
+
+	    <div>
+    		<div id="blue8"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue7"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue6"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue5"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    </div>
+
+	    <div>
+    		<div class="bloque"></div>
+	    	<div id="blue4"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue3"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue2"class="bloque"></div>
+	    	<div class="bloque"></div>
+	    	<div id="blue1"class="bloque"></div>
+	    </div>
+    	
+    </div>
+	<div id="Fichas">
+	    <div id="fichaRed1" class="estiloRed" ></div>
+	    <div id="fichaRed2" class="estiloRed" ></div>
+	    <div id="fichaRed3" class="estiloRed" ></div>
+	    <div id="fichaRed4" class="estiloRed" ></div>
+	    <div id="fichaRed5" class="estiloRed" ></div>
+	    <div id="fichaRed6" class="estiloRed" ></div>
+	    <div id="fichaRed7" class="estiloRed" ></div>
+	    <div id="fichaRed8" class="estiloRed" ></div>
+	    <div id="fichaRed9" class="estiloRed" ></div>
+	    <div id="fichaRed10" class="estiloRed" ></div>
+	    <div id="fichaRed11" class="estiloRed" ></div>
+	    <div id="fichaRed12" class="estiloRed" ></div>
+    
+	    <div id="fichaBlue1" class="estiloBlue" ></div>
+	    <div id="fichaBlue2" class="estiloBlue" ></div>
+	    <div id="fichaBlue3" class="estiloBlue" ></div>
+	    <div id="fichaBlue4" class="estiloBlue" ></div>
+	    <div id="fichaBlue5" class="estiloBlue" ></div>
+	    <div id="fichaBlue6" class="estiloBlue" ></div>
+	    <div id="fichaBlue7" class="estiloBlue" ></div>
+	    <div id="fichaBlue8" class="estiloBlue" ></div>
+	    <div id="fichaBlue9" class="estiloBlue" ></div>
+	    <div id="fichaBlue10" class="estiloBlue" ></div>
+	    <div id="fichaBlue11" class="estiloBlue" ></div>
+	    <div id="fichaBlue12" class="estiloBlue" ></div>
+    </div>
+
+<button id="boton1">Nuevo Juego</button>
+    <p id="posicion" class="text1">Posicion X:___Posicion Y:___</p>
+    <p id="mensaje" class="text2">Comenzar Juego!!!</p>
+
+    
+  </body>
+</html>

@@ -1,0 +1,126 @@
+body{
+	
+	padding-top:10px;
+	background-color: #D6EAF8;
+	text-align:center;
+}
+
+span{
+	font:250 140px/1em Amatic SC;
+	text-shadow: 4px 4px 15px #050505;
+	
+}
+
+.jiterry span{
+	animation:jitter 200ms linear infinite;
+	color:#f06d06;
+	display:inline-block;
+}
+
+@keyframes jitter{ 50%{transform:skewY(3deg) skewX(-3deg) scale(1.006);}
+		 }
+
+
+div{
+	display: block;
+	float: left;
+}
+.tablero{
+	background-color: #050505;
+	width: 800px;
+	height: 720px;
+	margin-left: 400px;
+	border:solid;
+	box-shadow: 14px 14px 50px #999;
+	
+}
+
+.bloque{
+	width: 100px;
+	height: 80px;
+}
+
+.tablero div:nth-child(odd) div:nth-child(even){
+	background-color: #FEF9E7;
+}
+.tablero div:nth-child(even) div:nth-child(odd){
+	background-color: #FEF9E7;
+}
+
+.estiloRed{
+	cursor: url(./img/cogedor.cur),pointer;
+	border-radius: 50px;
+	background-color: red;
+	width: 60px;
+	height: 60px;
+	border:solid;
+	box-shadow: 1px 1px 5px #999;*/
+	
+}
+
+.estiloBlue{
+	cursor: url(./img/cogedor.cur),pointer;
+	border-radius: 50px;
+	background-color: blue;
+	width: 60px;
+	height: 60px;
+	border:solid;
+	box-shadow: 1px 1px 15px #999;*/
+	
+}
+
+.threed:hover{
+	cursor: url(./img/arrastrador.cur),pointer;
+	box-shadow:
+1px 1px #999,
+2px 2px #999,
+3px 3px #999;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+#boton1 {
+    background-color: #4CAF50;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 4px 4px 15px #999;
+}
+
+  p{
+	font:250 20px/1em Amatic SC;
+	
+}
+
+ .text1 {
+	font: 20px/1em Amatic SC;
+	color: #00CC00;
+	text-shadow: 4px 4px 15px #050505;
+}
+.text2{
+	font: 50px/1em Amatic SC;
+	color: #00CC00;
+	text-shadow: 4px 4px 15px #050505;
+}
+
+
+.textBlue {
+	font: 30px/1em Amatic SC;
+	color: #0000FF;
+	text-shadow: 4px 4px 15px #050505;
+}
+
+.textRed{
+	font: 40px/1em Amatic SC;
+	color: #FF0000;
+	text-shadow: 4px 4px 15px #050505;
+}
